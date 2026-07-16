@@ -1,3 +1,5 @@
+# Sum of Even Numbers
+
 number = int(input("Enter the value of n: "))
 
 no_of_even = 0

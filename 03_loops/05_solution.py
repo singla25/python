@@ -1,3 +1,5 @@
+# Find count of character and first non repeating character
+
 string = input("Enter your string: ")
 
 count_of_character = {}

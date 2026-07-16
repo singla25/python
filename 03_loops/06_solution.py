@@ -1,3 +1,5 @@
+# Factoial Calculation
+
 num = int(input("Enter your number: "))
 
 original_num = num
