@@ -112,6 +112,22 @@
 # print(f)
 
 
+
+
+def countdown(n):
+  if n < 0:
+    return "Invalid Input"
+  
+  if n == 0:
+    print("Blastoff!")
+  
+  else:
+    print(n)
+    countdown(n - 1)
+
+print(countdown(5))
+
+
 def counter():
 
     count = 0
