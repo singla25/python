@@ -1,3 +1,5 @@
+# Add a class variable to Car that keeps track of the number of car created and also check how many different type of cars created on the basis of fuel type
+
 class Car:
     total_car = 0
     total_fuel_car = 0
