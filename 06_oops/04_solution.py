@@ -11,7 +11,7 @@ class Car:
         return self.__brand + " is the brand of the car."
 
     def full_name(self):
-            return f"Brand: {self.__brand} and Model: {self.model}"
+        return f"Brand: {self.__brand} and Model: {self.model}"
     
 my_car = Car("Toyota", "Corolla")
 # print(my_car.__brand) # This will raise an AttributeError
@@ -79,8 +79,11 @@ class Person2:
 
     @age.setter
     def age(self, value):
-        if value >= 0:
+        if value > 0:
             self.__age = value
+        else:
+            print("Age cannot be negative or 0")
+
 person2 = Person2(20)
 print(person2.age)
 person2.age = 25
