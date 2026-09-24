@@ -12,12 +12,12 @@ def debug(func):
     return wrapper
 
 @debug
-def greet(name, greeting="Hanji"):
-    print(f"{greeting}, {name}")
+def greet(name, age, greeting="Hanji"):
+    print(f"{greeting}, {name} {age} k ho hi gaye ho")
 
 @debug
 def hello():
     print("Hello Sahil")
 
-greet("Sahil", greeting="Hanji")
+greet("Sahil", 25, greeting="Hanji")
 hello()

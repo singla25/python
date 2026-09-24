@@ -1,9 +1,24 @@
 # Cache Return Values
 
-def chaicoder(num):
-    def actual(x):
-        return x ** num
-    return actual
+# implement a decorator that chaches the return values of a function, so that when it's called with the same arguments, the cached value is returned instead of re-executing the function
 
-f = chaicoder(2)(4)
-print(f)
+import time
+
+def cache(func):
+    cache_value = {}
+    print(cache_value)
+    def wrapper(*args):
+        if args in cache_value:
+            return cache_value[args]
+        result = func(*args)
+        cache_value[args] = result
+        return result
+    return wrapper
+
+@cache
+def long_running_func(a, b):
+    time.sleep(5)
+    return a + b
+
+print(long_running_func(10, 20))
+print(long_running_func(20, 30))
