@@ -6,10 +6,11 @@ import time
 
 def timer(func):
     def wrapper(*args, **kwargs):
+        print(f"Executing {func.__name__}...")
         start = time.time()
         result = func(*args, **kwargs)
         end = time.time()
-        print(f"{func.__name__} ran in {end-start} time")
+        print(f"{func.__name__} executed in {end-start} seconds")
         return result 
     return wrapper
 
