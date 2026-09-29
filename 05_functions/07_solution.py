@@ -26,6 +26,6 @@ n = input("Enter numbers separated by spaces: ")
 
 numbers = [int(num) for num in n.split()]
 
-result = sum_all(*numbers)
+result = sum_all(*numbers)  # The * here means unpack the list. sum_all(10, 20, 30)
 
 print(result)

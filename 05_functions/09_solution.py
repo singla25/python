@@ -1,5 +1,7 @@
 # Write a generator function that yields even numbers upto a specified limit
 
+# A generator does not generate all values at once. yield produces one value, pauses the function, and resumes from that point when the next value is requested.
+
 # Method 1
 # def even_generator(n):
 #     for i in range(n+1):
@@ -37,6 +39,8 @@
 
 # for num in count_up_to(n):
 #   print(num)
+
+
 
 
 def large_sequence(n):
