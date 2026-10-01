@@ -1,7 +1,8 @@
 # Abstraction: hides HOW something works, forces WHAT must exist.
 # The parent class defines a required method (a contract); it doesn't implement it.
 
-# abstractmethods are methods that are declared in an abstract class but do not have any implementation/code. Subclasses of the abstract class must provide an implementation for these methods.
+# abstractmethods are methods that are declared in an abstract class but do not have any implementation/code. 
+# Subclasses of the abstract class must provide an implementation for these methods.
 
 # @abstractmethod = declared, no implementation. Subclasses MUST override it.
 

@@ -1,4 +1,6 @@
-# @classmethod - @classmethod gets cls (the class itself) automatically, instead of self (the instance). That means it can access/modify class variables, and it's commonly used to create alternate constructors — extra ways to build an object besides the normal __init__.
+# @classmethod - @classmethod gets cls (the class itself) automatically, instead of self (the instance). 
+# That means it can access/modify class variables, and it's commonly used to create alternate constructors 
+# — extra ways to build an object besides the normal __init__.
 
 
 class Car:

@@ -1,7 +1,8 @@
 # Dunder (magic) methods
 
 # __str__(self) — controls what print(obj) or str(obj) shows. Meant to be human-readable.
-# __repr__(self) — controls what shows in the console/debugger, or when str isn't defined. Meant to be unambiguous, ideally something you could copy-paste to recreate the object.
+# __repr__(self) — 1) controls what shows in the console/debugger, or when str isn't defined. 
+#                  2) Meant to be unambiguous, ideally something you could copy-paste to recreate the object.
 
 
 class Car:
